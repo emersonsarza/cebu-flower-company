@@ -1,13 +1,18 @@
 @import url("./assets/fonts/Josefin_Sans/index.css");
 
+* {
+  box-sizing: border-box;
+}
+
 body {
+  background-color: #eeeeee;
+  color: #555555;
   margin: 0;
   font-family: 'Primary Font', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: 900;
 }
 
 code {
