@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/cebu-flower-company/static/css/main.76567636.css",
-    "main.js": "/cebu-flower-company/static/js/main.e8855932.js",
+    "main.js": "/cebu-flower-company/static/js/main.6bc4ec7b.js",
     "static/js/787.01b57800.chunk.js": "/cebu-flower-company/static/js/787.01b57800.chunk.js",
     "index.html": "/cebu-flower-company/index.html",
     "main.76567636.css.map": "/cebu-flower-company/static/css/main.76567636.css.map",
-    "main.e8855932.js.map": "/cebu-flower-company/static/js/main.e8855932.js.map",
+    "main.6bc4ec7b.js.map": "/cebu-flower-company/static/js/main.6bc4ec7b.js.map",
     "787.01b57800.chunk.js.map": "/cebu-flower-company/static/js/787.01b57800.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.76567636.css",
-    "static/js/main.e8855932.js"
+    "static/js/main.6bc4ec7b.js"
   ]
 }
