@@ -1,22 +1,15 @@
 {
   "files": {
-    "main.css": "/cebu-flower-company/static/css/main.558dce1a.css",
-    "main.js": "/cebu-flower-company/static/js/main.3928287c.js",
+    "main.css": "/cebu-flower-company/static/css/main.76567636.css",
+    "main.js": "/cebu-flower-company/static/js/main.e8855932.js",
     "static/js/787.01b57800.chunk.js": "/cebu-flower-company/static/js/787.01b57800.chunk.js",
-    "static/media/cfc.svg": "/cebu-flower-company/static/media/cfc.54daa809eb2ec90f86400314dc3b51e5.svg",
-    "static/media/JosefinSans-Medium.ttf": "/cebu-flower-company/static/media/JosefinSans-Medium.45a5738c27c1bbbecc0c.ttf",
-    "static/media/JosefinSans-Light.ttf": "/cebu-flower-company/static/media/JosefinSans-Light.1dca1658dbbee237496e.ttf",
-    "static/media/JosefinSans-Regular.ttf": "/cebu-flower-company/static/media/JosefinSans-Regular.511e3c3173e1aba79ba0.ttf",
-    "static/media/JosefinSans-ExtraLight.ttf": "/cebu-flower-company/static/media/JosefinSans-ExtraLight.c69de4ac6b8b0d6e1929.ttf",
-    "static/media/JosefinSans-Bold.ttf": "/cebu-flower-company/static/media/JosefinSans-Bold.958fefb32cf3d337d5bf.ttf",
-    "static/media/JosefinSans-Thin.ttf": "/cebu-flower-company/static/media/JosefinSans-Thin.bf7389b490a09daa4727.ttf",
     "index.html": "/cebu-flower-company/index.html",
-    "main.558dce1a.css.map": "/cebu-flower-company/static/css/main.558dce1a.css.map",
-    "main.3928287c.js.map": "/cebu-flower-company/static/js/main.3928287c.js.map",
+    "main.76567636.css.map": "/cebu-flower-company/static/css/main.76567636.css.map",
+    "main.e8855932.js.map": "/cebu-flower-company/static/js/main.e8855932.js.map",
     "787.01b57800.chunk.js.map": "/cebu-flower-company/static/js/787.01b57800.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.558dce1a.css",
-    "static/js/main.3928287c.js"
+    "static/css/main.76567636.css",
+    "static/js/main.e8855932.js"
   ]
 }
