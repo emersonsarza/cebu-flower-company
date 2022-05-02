@@ -92,7 +92,7 @@ const Header = () => {
         leave='transition ease-in-out duration-0'
         show={show}
       >
-        <MenuMobile>
+        <MenuMobile onClick={toggleShow}>
           <Transition.Child
             enter='transition ease-in-out duration-700 transform'
             enterFrom='-translate-x-full'
@@ -101,7 +101,7 @@ const Header = () => {
             leaveFrom='translate-x-0'
             leaveTo='-translate-x-full'
           >
-            <MenuOptions show={show}>
+            <MenuOptions onClick={(e) => e.stopPropagation()} show={show}>
               <MenuMobileHeader>
                 <XIcon onClick={toggleShow} className='h-6 cursor-pointer' />
               </MenuMobileHeader>
