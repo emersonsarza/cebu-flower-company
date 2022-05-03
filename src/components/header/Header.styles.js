@@ -2,7 +2,7 @@ import { createStyleWithClassName } from '../../utils/styles';
 
 export const Container = createStyleWithClassName(
   'header',
-  'absolute w-full z-10 border-b-2 border-black shadow-md'
+  'absolute w-full z-10 border-b-2 border-black shadow-md snap-start'
 )`
 `;
 

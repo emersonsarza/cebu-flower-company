@@ -9,6 +9,8 @@ import {
   SocMed,
 } from './Footer.styles';
 
+const year = new Date().getFullYear();
+
 const Footer = () => {
   return (
     <Container>
@@ -26,7 +28,7 @@ const Footer = () => {
         <PhoneIcon className='h-10 px-4 py-2 md:px-6' />
       </SocMed>
       <CopyRight>
-        <span className='whitespace-nowrap'>© 2022 Cebu Flower Company.</span>
+        <span className='whitespace-nowrap'>© {year} Cebu Flower Company.</span>
         <span className='whitespace-nowrap ml-1'>All Rights Reserved.</span>
       </CopyRight>
     </Container>

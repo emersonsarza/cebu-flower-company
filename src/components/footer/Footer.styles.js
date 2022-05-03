@@ -2,7 +2,7 @@ const { createStyleWithClassName } = require('../../utils/styles');
 
 export const Container = createStyleWithClassName(
   'footer',
-  'flex flex-col items-center justify-center space-y-5 px-6 py-12 text-white'
+  'flex flex-col items-center justify-center space-y-5 px-6 py-12 text-white snap-end'
 )`
   background: linear-gradient(to right, #e3d4c0 , #a7977e);
 `;

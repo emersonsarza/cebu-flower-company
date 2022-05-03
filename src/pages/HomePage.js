@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import Header from '../components/header/Header';
 import Footer from '../components/footer/Footer';
 import Banner from '../components/banner/Banner';
+import useIntersection from '../utils/useIntersection';
 
 const bannerItems = [
   {
@@ -37,9 +38,11 @@ const HomePage = () => {
   return (
     <>
       <Header />
-      {bannerItems.map((item) => (
-        <Banner {...item} />
-      ))}
+      <div>
+        {bannerItems.map((item) => (
+          <Banner key={item.img} {...item} />
+        ))}
+      </div>
       <Footer />
     </>
   );
