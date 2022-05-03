@@ -1,11 +1,16 @@
 import { useState, useEffect } from 'react';
 
-const useIntersection = (element, rootMargin = '-10%') => {
+const useIntersection = (element, rootMargin = '-10%', check = 'once') => {
   const [isVisible, setState] = useState(false);
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        setState(entry.isIntersecting);
+        if (check === 'always') {
+          setState(entry.isIntersecting);
+        }
+        if (check === 'once' && entry.isIntersecting && !isVisible) {
+          setState(true);
+        }
       },
       { rootMargin }
     );
@@ -13,7 +18,7 @@ const useIntersection = (element, rootMargin = '-10%') => {
     element.current && observer.observe(element.current);
 
     return () => observer.unobserve(element.current);
-  }, [element, rootMargin]);
+  }, [check, element, isVisible, rootMargin]);
 
   return isVisible;
 };
