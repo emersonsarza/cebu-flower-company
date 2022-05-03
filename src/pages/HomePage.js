@@ -15,6 +15,9 @@ const bannerItems = [
   life in time for Sunday, May 8 by Proflowers.`,
   },
   {
+    split: true,
+    imgPosition: 'right',
+    backgroundColor: '#78c07a',
     img: 'https://images.unsplash.com/photo-1579039063673-01eaba98a98e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80',
     title: `Mother's Day Sale`,
     description: `Show your mom a wonderful Mother’s Day with a special delivery from
@@ -24,6 +27,8 @@ const bannerItems = [
   life in time for Sunday, May 8 by Proflowers.`,
   },
   {
+    split: true,
+    backgroundColor: '#c74e77',
     img: 'https://images.unsplash.com/photo-1614107707976-08d6c92adc03?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2574&q=80',
     title: `Mother's Day Sale`,
     description: `Show your mom a wonderful Mother’s Day with a special delivery from
@@ -39,9 +44,11 @@ const HomePage = () => {
     <>
       <Header />
       <div>
-        {bannerItems.map((item) => (
-          <Banner key={item.img} {...item} />
-        ))}
+        <Banner {...bannerItems[0]} />
+        <div className='h-96 w-full snap-start' />
+        <Banner {...bannerItems[1]} />
+        <div className='h-96 w-full snap-start' />
+        <Banner {...bannerItems[2]} />
       </div>
       <Footer />
     </>

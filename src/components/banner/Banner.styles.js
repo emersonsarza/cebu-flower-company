@@ -46,10 +46,16 @@ const slideFromBottom = css`
 
 export const TextContainer = createStyleWithClassName(
   'div',
-  'flex flex-col items-center justify-center p-4 space-y-4'
+  'flex flex-col items-center justify-center p-4 space-y-4  snap-start'
 )`
   min-height: 400px;
-  backdrop-filter: contrast(0.6) blur(3px) brightness(0.75);
+
+  ${({ split }) =>
+    split
+      ? ''
+      : `
+      backdrop-filter: contrast(0.6) blur(3px) brightness(0.75);
+    `}
 `;
 
 export const Title = createStyleWithClassName(
@@ -59,18 +65,29 @@ export const Title = createStyleWithClassName(
 
 export const Description = createStyleWithClassName(
   'p',
-  'text-md md:text-xl text-center drop-shadow-md width-full md:w-1/2'
+  'text-md md:text-xl text-center drop-shadow-md w-3/4'
 )``;
 
 export const Container = createStyleWithClassName(
   'section',
   'relative w-full bg-pink-300 drop-shadow snap-center first:snap-start last:snap-end'
 )`
-  background: ${({ img }) => (img ? `url('${img}')` : '')};
-  background-repeat: no-repeat;
-  background-position: center center;
+  ${({ split, img, backgroundColor, textColor }) =>
+    split
+      ? `
+    background-color: ${backgroundColor};
+    color: ${textColor};
+  `
+      : `
+    background: ${img ? `url('${img}')` : ''};
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;  
   background-size: cover;  
-  color: #ffffff;
+    background-size: cover;  
+    color: #ffffff;
+  
+  `}
 
   ${({ visible }) =>
     visible
@@ -83,4 +100,13 @@ export const Container = createStyleWithClassName(
     }
   `
       : ''}
+`;
+
+export const Image = createStyleWithClassName('div', 'w-full snap-start')`
+  background: ${({ src }) => (src ? `url('${src}')` : '')};
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;  
+  
+  min-height: 400px;
 `;
